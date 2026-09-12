@@ -6,10 +6,10 @@ import { EmergencyModal } from "../components/EmergencyModal";
 import { BotBanner } from "../components/BotBanner";
 import { Footer } from "../components/Footer";
 
-import localFont from "next/font/local";
+import { Playfair_Display } from "next/font/google";
 
-const bagnardFont = localFont({
-  src: "../public/Bagnard.otf",
+const bagnardFont = Playfair_Display({
+  subsets: ["latin"],
   variable: "--font-bagnard",
 });
 
