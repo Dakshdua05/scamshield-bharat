@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { AppProvider } from "@/components/AppContext";
-import { Navbar } from "@/components/Navbar";
-import { EmergencyModal } from "@/components/EmergencyModal";
-import { BotBanner } from "@/components/BotBanner";
-import { Footer } from "@/components/Footer";
+import { AppProvider } from "../components/AppContext";
+import { Navbar } from "../components/Navbar";
+import { EmergencyModal } from "../components/EmergencyModal";
+import { BotBanner } from "../components/BotBanner";
+import { Footer } from "../components/Footer";
 
 import localFont from "next/font/local";
 

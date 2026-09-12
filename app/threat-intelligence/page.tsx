@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { ShieldAlert, RefreshCw, Server, AlertTriangle } from "lucide-react";
-import { useAppContext } from "@/components/AppContext";
-import { TRANSLATIONS } from "@/lib/translations";
+import { useAppContext } from "../../components/AppContext";
+import { TRANSLATIONS } from "../../lib/translations";
 
 type Threat = {
   id: number;

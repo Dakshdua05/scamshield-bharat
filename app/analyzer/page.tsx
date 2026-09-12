@@ -8,10 +8,10 @@ import {
 } from "lucide-react";
 import { createWorker } from "tesseract.js";
 import jsQR from "jsqr";
-import { runHeuristicAudit } from "@/lib/heuristics";
-import { exportForensicIncidentPdf } from "@/lib/pdfReport";
-import { useAppContext } from "@/components/AppContext";
-import { TRANSLATIONS } from "@/lib/translations";
+import { runHeuristicAudit } from "../../lib/heuristics";
+import { exportForensicIncidentPdf } from "../../lib/pdfReport";
+import { useAppContext } from "../../components/AppContext";
+import { TRANSLATIONS } from "../../lib/translations";
 
 type VectorTab = "text" | "url" | "ocr" | "qr" | "voice";
 

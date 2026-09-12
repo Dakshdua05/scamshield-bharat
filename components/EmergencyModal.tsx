@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { AlertOctagon, Clock, PhoneCall, Building2, ExternalLink, X, CheckSquare, FileText, ChevronRight, ChevronLeft, Download } from "lucide-react";
 import { useAppContext } from "./AppContext";
-import { exportForensicIncidentPdf } from "@/lib/pdfReport";
+import { exportForensicIncidentPdf } from "../lib/pdfReport";
 
 export function EmergencyModal() {
   const { isEmergencyOpen, setIsEmergencyOpen } = useAppContext();

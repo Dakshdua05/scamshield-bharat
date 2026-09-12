@@ -3,10 +3,10 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, FileText, Camera, Link2, QrCode, Mic, ArrowRight, AlertOctagon, Cpu, Zap } from "lucide-react";
-import { useAppContext, LangKey } from "@/components/AppContext";
-import { TRANSLATIONS } from "@/lib/translations";
+import { useAppContext, LangKey } from "../components/AppContext";
+import { TRANSLATIONS } from "../lib/translations";
 import Link from "next/link";
-import GlitchText from "@/components/GlitchText";
+import GlitchText from "../components/GlitchText";
 
 export default function HomePage() {
   const { lang, setIsEmergencyOpen } = useAppContext();

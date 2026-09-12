@@ -1,4 +1,4 @@
-import { LangKey } from "@/components/AppContext";
+import { LangKey } from "../components/AppContext";
 
 export const TRANSLATIONS: Record<LangKey, {
   heroTag: string;

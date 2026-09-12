@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { FileDown, Clock, ShieldAlert } from "lucide-react";
-import { exportForensicIncidentPdf } from "@/lib/pdfReport";
+import { exportForensicIncidentPdf } from "../../lib/pdfReport";
 
 type IncidentReport = {
   id: number;
