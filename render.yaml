@@ -3,6 +3,7 @@ services:
   - type: web
     name: scamshield-frontend
     env: node
+    plan: free
     buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
@@ -15,6 +16,7 @@ services:
   - type: web
     name: scamshield-backend
     env: docker
+    plan: free
     rootDir: backend
     dockerfilePath: ./Dockerfile
     envVars:
