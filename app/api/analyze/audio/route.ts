@@ -4,7 +4,7 @@ export async function POST(req: Request) {
   try {
     const formData = await req.formData();
     
-    const response = await fetch('http://localhost:8000/api/analyze/audio', {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/api/analyze/audio`, {
       method: 'POST',
       body: formData
     });

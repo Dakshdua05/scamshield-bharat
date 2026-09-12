@@ -5,7 +5,7 @@ export async function POST(req: Request) {
     const formData = await req.formData();
     
     // Forward the formData to the Python backend
-    const response = await fetch('http://localhost:8000/api/analyze/image', {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/api/analyze/image`, {
       method: 'POST',
       body: formData,
       // Note: Do not set Content-Type manually when passing FormData

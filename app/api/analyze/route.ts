@@ -6,7 +6,7 @@ export async function POST(req: Request) {
     const { text } = body;
 
     // Route to the FastAPI Python Backend
-    const backendRes = await fetch("http://localhost:8000/api/analyze/text", {
+    const backendRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/api/analyze/text`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
